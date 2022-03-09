@@ -1,0 +1,77 @@
+
+.site-list {
+    font-family: 'Alumni Sans', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+@media (max-width: @mobile-width-only) {
+    .main-nav--nojs .main-nav__toggle {
+        display: none;
+      }
+
+      .main-nav--closed .site-list {
+        display: none;
+      }
+
+      .main-nav--nojs .site-list {
+        display: block;
+      }
+
+      .main-nav__toggle {
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        z-index: 2;
+
+        display: block;
+        width: 40px;
+        height: 40px;
+
+        background-color: #000;
+        border: none;
+        cursor: pointer;
+      }
+
+
+      .main-nav--closed .main-nav__toggle::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        right: 16px;
+
+        width: 24px;
+        height: 2px;
+
+        background-color: #fff;
+        box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+      }
+
+      .main-nav--opened .main-nav__toggle {
+        top: -5px;
+        right: 10px;
+
+        background-color: #000;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 16px;
+          right: 16px;
+
+          width: 24px;
+          height: 24px;
+
+          background: url("../assets/img/menu_close.svg") center no-repeat;
+        }
+      }
+}
