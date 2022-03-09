@@ -334,33 +334,15 @@ body input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0 auto;
 }
-.main-nav {
-  background: #000;
-}
-.logo {
-  padding-bottom: 9.5rem;
-}
-.logo-image {
-  padding-top: 0.9em;
-  padding-left: 1rem;
-}
-.logo-link {
-  display: inline-block;
-  height: 100%;
-}
-.main-nav--closed .logo {
-  padding: 0;
-  padding-bottom: 0.6rem;
-}
 @media (max-width: 767px) {
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
   .main-nav--closed .site-list,
-  .button__main-nav {
+  .button-main-nav {
     display: none;
   }
-  .main-nav--opened .button__main-nav {
+  .main-nav--opened .button-main-nav {
     display: block;
   }
   .main-nav--nojs .site-list {
@@ -379,7 +361,7 @@ body input[type="radio"].visually-hidden {
     cursor: pointer;
   }
   .main-nav--closed .main-nav__toggle::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 20px;
     right: 16px;
@@ -394,14 +376,33 @@ body input[type="radio"].visually-hidden {
     background-color: #000;
   }
   .main-nav--opened .main-nav__toggle::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 16px;
     right: 16px;
     width: 24px;
     height: 24px;
-    background: url("../assets/img/menu_close.svg") center no-repeat;
+    background: url('../assets/img/menu_close.svg') center no-repeat;
   }
+}
+.main-nav {
+  background: #000;
+  padding-bottom: 5rem;
+}
+.logo {
+  padding-bottom: 9.5rem;
+}
+.logo-image {
+  padding-top: 0.9em;
+  padding-left: 1rem;
+}
+.logo-link {
+  display: inline-block;
+  height: 100%;
+}
+.main-nav--closed .logo {
+  padding: 0;
+  padding-bottom: 0.6rem;
 }
 .site-list {
   font-family: 'Alumni Sans', sans-serif;
@@ -413,12 +414,42 @@ body input[type="radio"].visually-hidden {
   list-style: none;
   padding-bottom: 1.75rem;
 }
+.site-list__item:last-child {
+  padding-bottom: 5rem;
+}
 .site-list__link {
   display: block;
   text-decoration: none;
   color: #fff;
   width: 100%;
   text-transform: uppercase;
+}
+.protect {
+  background: #000;
+}
+.protect-wrapper {
+  background: linear-gradient(180deg, rgba(122, 31, 193, 0.8) -15.13%, rgba(230, 37, 176, 0.8) 55.23%), url('../assets/img/banner_background_mobile.jpg') center no-repeat;
+  border-radius: 24px;
+  background-size: 100%;
+  min-height: 520px;
+}
+.protect-title {
+  font-family: Alumni Sans;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+}
+.protect-text {
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  color: #fff;
+}
+.protect-button {
+  background: #fff;
+  color: #E625B0;
 }
 
 /*# sourceMappingURL=style-min.css.map */
