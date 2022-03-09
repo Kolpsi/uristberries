@@ -460,5 +460,37 @@ body input[type="radio"].visually-hidden {
   margin: 0 auto;
   display: block;
 }
+.advice {
+  color: #fff;
+  background: #000;
+  font-family: 'Alumni Sans', sans-serif;
+}
+.advice-list {
+  margin: 0;
+  padding: 0;
+}
+.advice-item {
+  list-style: none;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  opacity: 0.2;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+}
+.advice-title {
+  padding-top: 1.3em;
+  margin: 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.advice-title-pink {
+  color: #E525B0;
+}
 
 /*# sourceMappingURL=style-min.css.map */
