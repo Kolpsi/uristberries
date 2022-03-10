@@ -438,6 +438,8 @@ body input[type="radio"].visually-hidden {
   background: #000;
 }
 .protect-wrapper {
+  margin: 0 auto;
+  width: 23.438rem;
   background: linear-gradient(180deg, rgba(122, 31, 193, 0.8) -15.13%, rgba(230, 37, 176, 0.8) 55.23%), url('../assets/img/banner_background_mobile.jpg') center no-repeat;
   border-radius: 24px;
   background-size: cover;
