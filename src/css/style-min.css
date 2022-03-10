@@ -828,6 +828,7 @@ body input[type="radio"].visually-hidden {
   margin: 0;
 }
 .happy-item {
+  list-style: none;
   margin: 0 auto 2.5rem;
   background: #230F33;
   width: 21.438rem;
@@ -995,6 +996,7 @@ body input[type="radio"].visually-hidden {
   padding-bottom: 2.5rem;
 }
 .form-input {
+  color: #fff;
   border: 1px solid #FFFFFF;
   border-radius: 36px;
   background: #10041A;
@@ -1012,6 +1014,80 @@ body input[type="radio"].visually-hidden {
   text-align: center;
   opacity: 0.5;
   padding-bottom: 5rem;
+  margin: 0;
+}
+.contact {
+  color: #fff;
+  background: #10041A;
+  padding-bottom: 5rem;
+}
+.contact-wrapper {
+  width: 21.375rem;
+  margin: 0 auto;
+}
+.contact-title {
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 0 2.5rem 0;
+  text-transform: uppercase;
+}
+.contact-link {
+  position: relative;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  letter-spacing: 0.015em;
+  text-align: left;
+  margin: 0 0 1rem 2.75rem;
+}
+.contact-number::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -45px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('../assets/img/mobile_icon.svg') center no-repeat;
+}
+.contact-email {
+  margin-bottom: 1.25rem;
+}
+.contact-email::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -45px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('../assets/img/email_icon.svg') center no-repeat;
+}
+.contact-adress {
+  line-height: 1.5rem;
+  letter-spacing: 0.015em;
+  text-align: left;
+  margin: 0 0 2.5rem 0;
+}
+.contact-map {
+  -moz-border-radius: 14px 14px 14px 14px;
+  /* Firefox */
+  -webkit-border-radius: 14px 14px 14px 14px;
+  /* Safari, Chrome */
+  -khtml-border-radius: 14px 14px 14px 14px;
+  /* KHTML */
+  border-radius: 14px 14px 14px 14px;
+  /* CSS3 */
+  overflow: hidden;
+  position: relative;
+}
+.contact-frame {
+  border: none;
 }
 
 /*# sourceMappingURL=style-min.css.map */
