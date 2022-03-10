@@ -968,5 +968,50 @@ body input[type="radio"].visually-hidden {
   text-align: left;
   margin-top: 0.75rem;
 }
+.form {
+  color: #fff;
+  background: #10041A;
+}
+.form-wrapper {
+  width: 21.375rem;
+  margin: 0 auto;
+}
+.form-title {
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 3.375rem;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 3.75rem 0 1.25rem 0;
+}
+.form-text {
+  line-height: 1.5rem;
+  letter-spacing: 0.015em;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 2.5rem;
+}
+.form-input {
+  border: 1px solid #FFFFFF;
+  border-radius: 36px;
+  background: #10041A;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 0 1rem 2rem;
+  margin-bottom: 0.75rem;
+}
+.form-input:last-of-type {
+  margin-bottom: 1.25rem;
+}
+.form-politic {
+  line-height: 1.5rem;
+  letter-spacing: 0.015em;
+  text-align: center;
+  opacity: 0.5;
+  padding-bottom: 5rem;
+}
 
 /*# sourceMappingURL=style-min.css.map */
