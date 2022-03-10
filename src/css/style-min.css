@@ -335,13 +335,14 @@ body input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 .button-more {
+  display: block;
   border: 2px solid #E625B0;
   color: #E625B0;
   background: #fff;
   font-weight: 600;
   line-height: 1.5rem;
   letter-spacing: 0.015em;
-  text-align: left;
+  margin: 0 auto;
 }
 @media (max-width: 767px) {
   .main-nav--nojs .main-nav__toggle {
@@ -783,6 +784,9 @@ body input[type="radio"].visually-hidden {
   text-align: left;
   margin-right: 0.75rem;
 }
+.happy {
+  margin-bottom: 5rem;
+}
 .happy-button {
   position: relative;
   color: #fff;
@@ -824,7 +828,7 @@ body input[type="radio"].visually-hidden {
   margin: 0;
 }
 .happy-item {
-  margin: 0 auto;
+  margin: 0 auto 2.5rem;
   background: #230F33;
   width: 21.438rem;
   border-radius: 24px;
@@ -835,7 +839,7 @@ body input[type="radio"].visually-hidden {
   width: 18.438rem;
 }
 .item-name {
-  margin: 0;
+  margin: 2.5rem;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.875rem;
@@ -875,6 +879,9 @@ body input[type="radio"].visually-hidden {
   letter-spacing: 0.015em;
   text-align: left;
   margin: 0 0 1.25rem 0;
+}
+.consult {
+  background: radial-gradient(69.99% 69.63% at 77.55% 16.37%, #FFFFFF 0%, #FC69D3 49.48%, #3A46AF 100%);
 }
 
 /*# sourceMappingURL=style-min.css.map */
