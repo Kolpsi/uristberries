@@ -593,5 +593,93 @@ body input[type="radio"].visually-hidden {
 .team-cards-hidden {
   margin-bottom: 2.5em;
 }
+.team-cards-bold {
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 0.5em;
+  display: block;
+}
+.team-cards1 {
+  display: none;
+}
+.team-cards2 {
+  display: none;
+}
+.team-cards3 {
+  display: none;
+}
+.about {
+  width: 21.4rem;
+  margin: 0 auto;
+}
+.about-title {
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 3.37rem;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.about-list {
+  margin: 0;
+  padding: 0;
+}
+.about-item {
+  list-style: none;
+  background: linear-gradient(118.55deg, #7A1FC1 47.45%, #E625B0 129.77%);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border-radius: 1.5rem;
+  width: 21.4rem;
+  margin: 0 auto;
+}
+.about-item-wrapper {
+  margin: 0 auto;
+  width: 17.4rem;
+}
+.about-item-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.87rem;
+  letter-spacing: 0.015em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  padding-top: 1.8em;
+}
+.about-item-text {
+  font-weight: 400;
+  line-height: 1.25em;
+  letter-spacing: 0.015em;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 2.25em;
+}
+.about-video {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+.video-wrapper {
+  position: relative;
+  min-height: 15rem;
+  margin-top: 3.75rem;
+  margin-bottom: 2.5rem;
+}
+.playpause {
+  background: url('../assets/img/video_play.svg') center no-repeat;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: -36%;
+  bottom: 0%;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+}
 
 /*# sourceMappingURL=style-min.css.map */
