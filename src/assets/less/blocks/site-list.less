@@ -36,7 +36,6 @@
         }
 
         &-link {
-
             font-family: 'Gothic A1', sans-serif;
             font-size: 1.25rem;
             font-style: normal;
@@ -44,7 +43,10 @@
             line-height: 1.875rem;
             letter-spacing: 0.015em;
             text-align: left;
-
+            text-transform: lowercase;
+            &::first-letter {
+                text-transform: uppercase;
+            }
         }
     }
 }

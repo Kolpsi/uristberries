@@ -29,6 +29,7 @@
         list-style: none;
         margin: 0 auto 2.5rem;
         width: 12.5rem;
+
         &-title {
             font-family: 'Alumni Sans', sans-serif;
             font-size: 120px;
@@ -53,6 +54,40 @@
             line-height: 24px;
             text-align: center;
             margin: 0;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .statistic {
+
+        &-title {
+            font-size: 6rem;
+            line-height: 5.375rem;
+            margin-bottom: 7.5rem;
+        }
+
+        &-list {
+            display: flex;
+            width: 72.5rem;
+            margin: 0 auto;
+        }
+
+        &-item {
+            position: relative;
+
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     height: 200px;
+            //     width: 1px;
+            //     left: 10px;
+            //     top: 0px;
+            //     border-radius: 0px;
+            //     background: #5D5266;
+            //     ;
+
+            // }
         }
     }
 }
