@@ -37,4 +37,18 @@
             color: #E525B0;
         }
     }
+
+    .active {
+        animation: illumination 0.5s ease-in-out;
+        opacity: 1;
+    }
+}
+
+@keyframes illumination {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
 }

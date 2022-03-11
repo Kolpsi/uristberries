@@ -333,6 +333,7 @@ body input[type="radio"].visually-hidden {
   border-radius: 36px;
   padding: 0;
   margin: 0 auto;
+  text-decoration: none;
 }
 .button-more {
   display: block;
@@ -343,6 +344,10 @@ body input[type="radio"].visually-hidden {
   line-height: 1.5rem;
   letter-spacing: 0.015em;
   margin: 0 auto;
+}
+.button-main-nav {
+  padding: 1rem 0 1rem 0;
+  min-height: 0;
 }
 @media (max-width: 767px) {
   .main-nav--nojs .main-nav__toggle {
@@ -470,6 +475,9 @@ body input[type="radio"].visually-hidden {
   text-align: center;
   margin: 0 auto;
   display: block;
+  text-decoration: none;
+  min-height: 0;
+  padding: 1rem 0 1rem 0;
 }
 .advice {
   color: #fff;
@@ -505,6 +513,18 @@ body input[type="radio"].visually-hidden {
 }
 .advice-title-pink {
   color: #E525B0;
+}
+.advice .active {
+  animation: illumination 0.5s ease-in-out;
+  opacity: 1;
+}
+@keyframes illumination {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .statistic {
   color: #fff;
@@ -602,8 +622,11 @@ body input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 0.5em;
 }
-.team-cards-hidden {
+.team-cards-btn {
   margin-bottom: 2.5em;
+  text-decoration: none;
+  color: #000;
+  text-transform: lowercase;
 }
 .team-cards-bold {
   font-weight: 600;
@@ -611,15 +634,6 @@ body input[type="radio"].visually-hidden {
   text-align: left;
   margin-top: 0.5em;
   display: block;
-}
-.team-cards1 {
-  display: none;
-}
-.team-cards2 {
-  display: none;
-}
-.team-cards3 {
-  display: none;
 }
 .about {
   width: 21.4rem;
