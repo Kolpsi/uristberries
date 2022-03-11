@@ -60,7 +60,7 @@
 
 @media (min-width: @desktop-width) {
     .statistic {
-
+        padding-bottom: 11.25rem;
         &-title {
             font-size: 6rem;
             line-height: 5.375rem;
@@ -71,23 +71,33 @@
             display: flex;
             width: 72.5rem;
             margin: 0 auto;
+            margin-bottom: 6.625rem
         }
 
         &-item {
             position: relative;
 
-            // &::after {
-            //     content: '';
-            //     position: absolute;
-            //     height: 200px;
-            //     width: 1px;
-            //     left: 10px;
-            //     top: 0px;
-            //     border-radius: 0px;
-            //     background: #5D5266;
-            //     ;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 200px;
+                width: 1px;
+                right: -40px;
+                top: 0px;
+                border-radius: 0px;
+                background: #5D5266;
 
-            // }
+            }
+
+            &:last-child::after {
+                width: 0;
+            }
+
+            &-text {
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+            }
         }
+
     }
 }

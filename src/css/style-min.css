@@ -398,6 +398,10 @@ body input[type="radio"].visually-hidden {
     padding: 1.438rem 0;
     margin: 0 0 0 3.75rem;
   }
+  .button-statistic {
+    padding: 1.25rem 2rem 1.25rem 2rem;
+    margin-bottom: 6.625rem;
+  }
 }
 @media (max-width: 1160px) {
   .main-nav--nojs .main-nav-toggle {
@@ -762,6 +766,9 @@ body input[type="radio"].visually-hidden {
   margin: 0;
 }
 @media (min-width: 1160px) {
+  .statistic {
+    padding-bottom: 11.25rem;
+  }
   .statistic-title {
     font-size: 6rem;
     line-height: 5.375rem;
@@ -771,9 +778,27 @@ body input[type="radio"].visually-hidden {
     display: flex;
     width: 72.5rem;
     margin: 0 auto;
+    margin-bottom: 6.625rem;
   }
   .statistic-item {
     position: relative;
+  }
+  .statistic-item::after {
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 1px;
+    right: -40px;
+    top: 0px;
+    border-radius: 0px;
+    background: #5D5266;
+  }
+  .statistic-item:last-child::after {
+    width: 0;
+  }
+  .statistic-item-text {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
 }
 .team-title {
