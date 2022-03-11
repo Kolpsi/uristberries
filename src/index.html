@@ -11,263 +11,289 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Chathura&family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link rel="stylesheet" href="css/style-min.css">
     <title>uristberries</title>
 </head>
 
 <body>
-    <!-- Шапка страницы -->
-    <header class="main-header">
-        <nav class="main-nav main-nav--nojs main-nav--opened">
-            <div class="logo-wrapper">
-                <div class="logo">
-                    <a href="index.html" class="logo-link">
-                        <img class="logo-image" src="assets/img/uristberries.svg" alt="uristberries">
-                    </a>
-                </div>
-                <button class="main-nav__toggle" type="button">
+    <main class="page-main">
+        <!-- Шапка страницы -->
+        <div class="main-wrapper">
+            <header class="main-header">
+                <nav class="main-nav main-nav--nojs main-nav--opened">
+                    <div class="logo-wrapper">
+                        <div class="logo">
+                            <a href="index.html" class="logo-link">
+                                <img class="logo-image" src="assets/img/uristberries.svg" alt="uristberries">
+                            </a>
+                        </div>
+                        <button class="main-nav__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
+                    </div>
+                    <!-- меню навигации -->
+                    <ul class="site-list">
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">О нас</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">Об услуге</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">Кейсы</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="#form" class="button button-main-nav">Обратная связь</a>
+                </nav>
+            </header>
+            <h1 class="visually-hidden">uristberries</h1>
+            <!-- Блок помощи -->
+            <section class="protect">
+                <div class="protect-wrapper">
+                    <h2 class="protect-title">Пострадали от Wildberries?</h2>
+                    <p class="protect-text">Профессиональная юридическая защита продавцов на маркетплейсе. Мы сохраняем ваше время, деньги и нервы. Правда на вашей стороне.</p>
+                    <a href="#form" class="button protect-button">Обратиться за помощью</a>
+                </div>
+            </section>
+            <!-- Блок подсказок -->
+            <section class="advice">
+                <div class="advice-wrapper">
+                    <h2 class="advice-title">обращайтесь
+                        <br> к нам если
+                        <br> <span class="advice-title-pink">wildberries:</span>
+                    </h2>
+                    <ul class="advice-list">
+                        <li class="advice-item advice-item-1">потерял ваши товары</li>
+                        <li class="advice-item advice-item-2">не переводит деньги за продажи</li>
+                        <li class="advice-item advice-item-3">Встал на сторону мошенников</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Блок статистики -->
+            <section class="statistic">
+                <h2 class="statistic-title">
+                    <span class="statistic-title-violet">за 17 лет</span>
+                    <br> существования
+                    <br> платформы
+                </h2>
+                <ul class="statistic-list">
+                    <li class="statistic-item">
+                        <h3 class="statistic-item-title">150</h3>
+                        <p class="statistic-item-quantity">млдр рублей</p>
+                        <p class="statistic-item-text">Потеряли продавцы на платформе</p>
+                    </li>
+                    <li class="statistic-item">
+                        <h3 class="statistic-item-title">50</h3>
+                        <p class="statistic-item-quantity">млн товаров</p>
+                        <p class="statistic-item-text">Утеряны на складах компании</p>
+                    </li>
+                    <li class="statistic-item">
+                        <h3 class="statistic-item-title">35</h3>
+                        <p class="statistic-item-quantity">млн товаров</p>
+                        <p class="statistic-item-text">Испорчены или потеряли товарный вид</p>
+                    </li>
+                    <li class="statistic-item">
+                        <h3 class="statistic-item-title">1</h3>
+                        <p class="statistic-item-quantity">млн магазинов</p>
+                        <p class="statistic-item-text">Так и не защитили свои права</p>
+                    </li>
+                </ul>
+                <a href="#form" class="button button-statistic">Это про меня</a>
+            </section>
+        </div>
+        <!-- Блок с карточками команды -->
+        <section class="team">
+            <div class="team-wrapper">
+                <h2 class="team-title">команда</h2>
+                <p class="team-description">Слаженная команда, которая дествительно понимает ваши проблемы. Мы сталкивались с этими проблемами на собственном опыте, успешно их разрешили, а теперь успешно помогаем в этом другим!
+                </p>
+                <ul class="team-cards">
+                    <li class="team-cards-item">
+                        <img class="team-cards-img" src="../assets/img/nabotov.png" alt="Наботов Михаил Сергеевич">
+                        <p class="team-cards-name">Наботов михаил сергеевич</p>
+                        <p class="team-cards-post">Управляющий партнер UristBerries, топ-селлер WB</p>
+                        <article class="team-readmore1">
+                            <p class="team-cards1">С начала 2020 года, мы с партнёром регулярно несли потери от неправомерных действий Wildberries, однако бизнес приносил прибыль и мы боялись предпринимать активные действия во избежании блокировки кабинета партнёра. Все изменилось
+                                в августе 2021 года, когда WB не доплатил нам 1,4 млн рублей за неделю. Чтобы отстоять свои интерес мы потратили 2,5 месяца и очень много нервов, однако нам удалось очень хорошо разобраться в данном вопросе и мы решили
+                                создать UristBerries, чтобы защитить и ваши интересы от неправомерных, а порой и беспредельных действий WB!</p>
+                        </article>
+                    </li>
+                    <li class="team-cards-item">
+                        <img class="team-cards-img" src="../assets/img/astahov.png" alt="Наботов Михаил Сергеевич">
+                        <p class="team-cards-name">Астахов Максим Павлович</p>
+                        <p class="team-cards-post">Руководитель юридического департамента UristBerries</p>
+                        <article class="team-readmore2">
+                            <p class="team-cards2">Член Адвокатской палаты города Москвы, Почётный адвокат России, член ассоциации юристов России, кандидат юридических наук. Руководит деятельностью отдела юридической защиты UristBerries в составе из 9 юристов!
+                                <span class="team-cards-bold">Представительство интересов доверителя в суде</span>
+                            </p>
+                        </article>
+                    </li>
+                    <li class="team-cards-item">
+                        <img class="team-cards-img" src="../assets/img/kapustova.png" alt="Наботов Михаил Сергеевич">
+                        <p class="team-cards-name">Капустина Юлия Метрофанова</p>
+                        <p class="team-cards-post">Заместитель юридического отдела UristBerries</p>
+                        <article class="team-readmore3">
+                            <p class="team-cards3">Юлия координирует взаимодействие наших дорогих клиентов и ответственных по делам юристов. Вносит прозрачность в процесс, если необходимо, простым языком доносит до клиента сложные юридические аспекты дела.
+                                <span class="team-cards-bold">Помощь в коммуникации между юристами и клиентами</span>
+                            </p>
+                        </article>
+                    </li>
+                </ul>
             </div>
-            <!-- меню навигации -->
-            <ul class="site-list">
-                <li class="site-list__item">
-                    <a class="site-list__link" href="index.html">Главная</a>
+        </section>
+        <!-- Блок о нас -->
+        <section class="about">
+            <h2 class="about-title">ещё больше о нас</h2>
+            <ul class="about-list">
+                <li class="about-item">
+                    <div class="about-item-wrapper">
+                        <h3 class="about-item-title">знаем систему изнутри</h3>
+                        <p class="about-item-text">Мы не понаслышке знакомы с особенностями платформы, так как сами ведём там бизнес</p>
+                    </div>
                 </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">О нас</a>
+                <li class="about-item">
+                    <div class="about-item-wrapper">
+                        <h3 class="about-item-title">проходили через это</h3>
+                        <p class="about-item-text">Нам понятны ваши проблемы, ведь мы сами с ними сталкивались</p>
+                    </div>
                 </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">Об услуге</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">Кейсы</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">Контакты</a>
-                </li>
-            </ul>
-            <a href="#form" class="button button-main-nav">Обратная связь</a>
-        </nav>
-    </header>
-    <h1 class="visually-hidden">uristberries</h1>
-    <!-- Блок помощи -->
-    <section class="protect">
-        <div class="protect-wrapper">
-            <h2 class="protect-title">Пострадали от Wildberries?</h2>
-            <p class="protect-text">Профессиональная юридическая защита продавцов на маркетплейсе. Мы сохраняем ваше время, деньги и нервы. Правда на вашей стороне.</p>
-            <a href="#form" class="button protect-button">Обратиться за помощью</a>
-        </div>
-    </section>
-    <!-- Блок подсказок -->
-    <section class="advice">
-        <div class="advice-wrapper">
-            <h2 class="advice-title">обращайтесь
-                <br> к нам если
-                <br> <span class="advice-title-pink">wildberries:</span>
-            </h2>
-            <ul class="advice-list">
-                <li class="advice-item advice-item-1">потерял ваши товары</li>
-                <li class="advice-item advice-item-2">не переводит деньги за продажи</li>
-                <li class="advice-item advice-item-3">Встал на сторону мошенников</li>
-            </ul>
-        </div>
-    </section>
-    <!-- Блок статистики -->
-    <section class="statistic">
-        <h2 class="statistic-title">
-            <span class="statistic-title-violet">за 17 лет</span>
-            <br> существования
-            <br> платформы
-        </h2>
-        <ul class="statistic-list">
-            <li class="statistic-item">
-                <h3 class="statistic-item-title">150</h3>
-                <p class="statistic-item-quantity">млдр рублей</p>
-                <p class="statistic-item-text">Потеряли продавцы на платформе</p>
-            </li>
-            <li class="statistic-item">
-                <h3 class="statistic-item-title">50</h3>
-                <p class="statistic-item-quantity">млн товаров</p>
-                <p class="statistic-item-text">Утеряны на складах компании</p>
-            </li>
-            <li class="statistic-item">
-                <h3 class="statistic-item-title">35</h3>
-                <p class="statistic-item-quantity">млн товаров</p>
-                <p class="statistic-item-text">Испорчены или потеряли товарный вид</p>
-            </li>
-            <li class="statistic-item">
-                <h3 class="statistic-item-title">1</h3>
-                <p class="statistic-item-quantity">млн магазинов</p>
-                <p class="statistic-item-text">Так и не защитили свои права</p>
-            </li>
-        </ul>
-        <button class="button">Это про меня</button>
-    </section>
-    <section class="team">
-        <div class="team-wrapper">
-            <h2 class="team-title">команда</h2>
-            <p class="team-description">Слаженная команда, которая дествительно понимает ваши проблемы. Мы сталкивались с этими проблемами на собственном опыте, успешно их разрешили, а теперь успешно помогаем в этом другим!
-            </p>
-            <ul class="team-cards">
-                <li class="team-cards-item">
-                    <img class="team-cards-img" src="../assets/img/nabotov.png" alt="Наботов Михаил Сергеевич">
-                    <p class="team-cards-name">Наботов михаил сергеевич</p>
-                    <p class="team-cards-post">Управляющий партнер UristBerries, топ-селлер WB</p>
-                    <article class="team-readmore1">
-                        <p class="team-cards1">С начала 2020 года, мы с партнёром регулярно несли потери от неправомерных действий Wildberries, однако бизнес приносил прибыль и мы боялись предпринимать активные действия во избежании блокировки кабинета партнёра. Все изменилось
-                            в августе 2021 года, когда WB не доплатил нам 1,4 млн рублей за неделю. Чтобы отстоять свои интерес мы потратили 2,5 месяца и очень много нервов, однако нам удалось очень хорошо разобраться в данном вопросе и мы решили создать
-                            UristBerries, чтобы защитить и ваши интересы от неправомерных, а порой и беспредельных действий WB!</p>
-                    </article>
-                </li>
-                <li class="team-cards-item">
-                    <img class="team-cards-img" src="../assets/img/astahov.png" alt="Наботов Михаил Сергеевич">
-                    <p class="team-cards-name">Астахов Максим Павлович</p>
-                    <p class="team-cards-post">Руководитель юридического департамента UristBerries</p>
-                    <article class="team-readmore2">
-                        <p class="team-cards2">Член Адвокатской палаты города Москвы, Почётный адвокат России, член ассоциации юристов России, кандидат юридических наук. Руководит деятельностью отдела юридической защиты UristBerries в составе из 9 юристов!
-                            <span class="team-cards-bold">Представительство интересов доверителя в суде</span>
-                        </p>
-                    </article>
-                </li>
-                <li class="team-cards-item">
-                    <img class="team-cards-img" src="../assets/img/kapustova.png" alt="Наботов Михаил Сергеевич">
-                    <p class="team-cards-name">Капустина Юлия Метрофанова</p>
-                    <p class="team-cards-post">Заместитель юридического отдела UristBerries</p>
-                    <article class="team-readmore3">
-                        <p class="team-cards3">Юлия координирует взаимодействие наших дорогих клиентов и ответственных по делам юристов. Вносит прозрачность в процесс, если необходимо, простым языком доносит до клиента сложные юридические аспекты дела.
-                            <span class="team-cards-bold">Помощь в коммуникации между юристами и клиентами</span>
-                        </p>
-                    </article>
+                <li class="about-item">
+                    <div class="about-item-wrapper">
+                        <h3 class="about-item-title">Имеем успешные кейсы</h3>
+                        <p class="about-item-text">Мы отстояли свои права и права многих наших коллег, продающих на Wildberries</p>
+                    </div>
                 </li>
             </ul>
-        </div>
-    </section>
-    <section class="about">
-        <h2 class="about-title">ещё больше о нас</h2>
-        <ul class="about-list">
-            <li class="about-item">
-                <div class="about-item-wrapper">
-                    <h3 class="about-item-title">знаем систему изнутри</h3>
-                    <p class="about-item-text">Мы не понаслышке знакомы с особенностями платформы, так как сами ведём там бизнес</p>
-                </div>
-            </li>
-            <li class="about-item">
-                <div class="about-item-wrapper">
-                    <h3 class="about-item-title">проходили через это</h3>
-                    <p class="about-item-text">Нам понятны ваши проблемы, ведь мы сами с ними сталкивались</p>
-                </div>
-            </li>
-            <li class="about-item">
-                <div class="about-item-wrapper">
-                    <h3 class="about-item-title">Имеем успешные кейсы</h3>
-                    <p class="about-item-text">Мы отстояли свои права и права многих наших коллег, продающих на Wildberries</p>
-                </div>
-            </li>
-        </ul>
-        <article class="video-wrapper">
-            <video poster="" class="about-video" preload="auto">
+            <article class="video-wrapper">
+                <video poster="" class="about-video" preload="auto">
                 <source src="http://media.w3.org/2010/05/sintel/trailer.webm">
             </video>
-            <div class="playpause"></div>
-        </article>
-    </section>
-    <section class="defend">
-        <h2 class="defend-title">
-            защита ваших интересов
-        </h2>
-        <p class="defend-description">
-            Это наша главная задача. Мы выделили основные пути её решения. Обратиться к нам — значит выбрать победителей
-        </p>
+                <div class="playpause"></div>
+            </article>
+        </section>
+        <!-- Блок защиты интересов -->
+        <section class="defend">
+            <h2 class="defend-title">
+                защита ваших интересов
+            </h2>
+            <p class="defend-description">
+                Это наша главная задача. Мы выделили основные пути её решения. Обратиться к нам — значит выбрать победителей
+            </p>
 
-        <ul class="defend-list">
-            <li class="defend-item">
-                <div class="defend-item-wrapper">
-                    <h3 class="defend-item-title">Локальное и оперативное решение проблемы</h3>
-                    <p class="defend-item-text">Правильное составление заявки в Сервис Деск, контакт непосредственно с офисом Вайлдбериз и сотрудниками специализирующимися на данном инциденте путём официальной переписки по электронной почте</p>
-                    <p class="defend-item-time">Срок: <span class="defend-time-bold">1-2 недели</span></p>
-                    <p class="defend-item-percent"><span class="percent-pink">70<span
+            <ul class="defend-list">
+                <li class="defend-item">
+                    <div class="defend-item-wrapper">
+                        <h3 class="defend-item-title">Локальное и оперативное решение проблемы</h3>
+                        <p class="defend-item-text">Правильное составление заявки в Сервис Деск, контакт непосредственно с офисом Вайлдбериз и сотрудниками специализирующимися на данном инциденте путём официальной переписки по электронной почте</p>
+                        <p class="defend-item-time">Срок: <span class="defend-time-bold">1-2 недели</span></p>
+                        <p class="defend-item-percent"><span class="percent-pink">70<span
                                 class="defend-percent">%</span></span>Решения всех вопросов</p>
-                </div>
-            </li>
-            <li class="defend-item">
-                <div class="defend-item-wrapper">
-                    <h3 class="defend-item-title">досудебная претензия</h3>
-                    <p class="defend-item-text">А также контакт с сотрудниками Вайлдбериз, оповещение о дальнейших намерениях специализированных сотрудников маркетплейса</p>
-                    <p class="defend-item-time">Срок: <span class="defend-time-bold">до 40 дней</span> </p>
-                    <p class="defend-item-percent"><span class="percent-pink">15<span
+                    </div>
+                </li>
+                <li class="defend-item">
+                    <div class="defend-item-wrapper">
+                        <h3 class="defend-item-title">досудебная претензия</h3>
+                        <p class="defend-item-text">А также контакт с сотрудниками Вайлдбериз, оповещение о дальнейших намерениях специализированных сотрудников маркетплейса</p>
+                        <p class="defend-item-time">Срок: <span class="defend-time-bold">до 40 дней</span> </p>
+                        <p class="defend-item-percent"><span class="percent-pink">15<span
                                 class="defend-percent">%</span></span>Решения всех вопросов</p>
-                </div>
-            </li>
-            <li class="defend-item">
-                <div class="defend-item-wrapper">
-                    <h3 class="defend-item-title">арбитражный суд с маркетплейсом</h3>
-                    <p class="defend-item-text">Самый длительный из процессов, но самый выгодный со стороны финансов, так как здесь можно учесть все сопутствующие расходы, моральный ущерб, попытаться взыскать упущенную прибыль
-                    </p>
-                    <p class="defend-item-time">Срок: <span class="defend-time-bold">3–6 месяцев</span> </p>
-                    <p class="defend-item-percent"><span class="percent-pink">15<span
+                    </div>
+                </li>
+                <li class="defend-item">
+                    <div class="defend-item-wrapper">
+                        <h3 class="defend-item-title">арбитражный суд с маркетплейсом</h3>
+                        <p class="defend-item-text">Самый длительный из процессов, но самый выгодный со стороны финансов, так как здесь можно учесть все сопутствующие расходы, моральный ущерб, попытаться взыскать упущенную прибыль
+                        </p>
+                        <p class="defend-item-time">Срок: <span class="defend-time-bold">3–6 месяцев</span> </p>
+                        <p class="defend-item-percent"><span class="percent-pink">15<span
                                 class="defend-percent">%</span></span>Решения всех вопросов</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="happy">
-        <h2 class="happy-title">успешные кейсы — это довольные клиенты</h2>
-        <ul class="happy-list">
-            <li class="happy-item">
-                <div class="happy-item-wrapper">
-                    <p class="item-name">софья замахаева</p>
-                    <p class="item-problem">Wildberries испортили товар при транспортировке и отказывались брать на себя ответственность</p>
-                    <p class="item-result">Итог:</p>
-                    <p class="item-result-description">Отправили досудебную претензию и через 3 недели возместили полную стоимость испорченных товаров</p>
-                    <p class="item-total">вернули: <br> 1 500 000 рублей</p>
-                    <button class="happy-button">читать отзыв</button>
-                </div>
-            </li>
-        </ul>
-        <button class="button button-more">Открыть ещё</button>
-    </section>
-    <section class="consult">
-        <div class="consult-mask">
-            <div class="consult-wrapper">
-                <h2 class="consult-title">Сомневаетесь? проконсультируйтесь бесплатно прямо сейчас</h2>
-                <p class="consult-text">Ответим на любые вопросы и дадим качественную оценку вашим перспективам в защите своих прав перед Wildberries</p>
-                <button class="button protect-button">Обратиться за помощью</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- Блок довольных клиентов -->
+        <section class="happy">
+            <h2 class="happy-title">успешные кейсы — это довольные клиенты</h2>
+            <ul class="happy-list">
+                <li class="happy-item">
+                    <div class="happy-item-wrapper">
+                        <p class="item-name">софья замахаева</p>
+                        <p class="item-problem">Wildberries испортили товар при транспортировке и отказывались брать на себя ответственность</p>
+                        <p class="item-result">Итог:</p>
+                        <p class="item-result-description">Отправили досудебную претензию и через 3 недели возместили полную стоимость испорченных товаров</p>
+                        <p class="item-total">вернули: <br> 1 500 000 рублей</p>
+                        <a class="happy-button" data-fancybox data-src="#hidden-feedback" href="javascript:;">читать отзыв</a>
+                    </div>
+                </li>
+                <li class="happy-item happy-item-hidden">
+                    <div class="happy-item-wrapper">
+                        <p class="item-name">софья замахаева</p>
+                        <p class="item-problem">Wildberries испортили товар при транспортировке и отказывались брать на себя ответственность</p>
+                        <p class="item-result">Итог:</p>
+                        <p class="item-result-description">Отправили досудебную претензию и через 3 недели возместили полную стоимость испорченных товаров</p>
+                        <p class="item-total">вернули: <br> 1 500 000 рублей</p>
+                        <a class="happy-button" data-fancybox data-src="#hidden-feedback" href="javascript:;">читать отзыв</a>
+                    </div>
+                </li>
+            </ul>
+            <div id="hidden-feedback">
+                <p class="item-name">Отзыв</p>
             </div>
-        </div>
-    </section>
-    <section class="experience">
-        <h2 class="experience-title">делимся опытом</h2>
-        <button class="happy-button experience-button">Читать блог</button>
-        <ul class="swiper">
-            <div class="swiper-wrapper">
-                <li class="swiper-slide">
-                    <img src="../assets/img/slide.png" alt="slide-description" width="268px" height="268px">
-                    <p class="slide-text">Как начать за рабатывать на бирже и чтоб пацаны поняли</p>
-                </li>
-                <li class="swiper-slide">
-                    <img src="../assets/img/slide.png" alt="slide-description" width="268px" height="268px">
-                    <p class="slide-text">Как начать за рабатывать на бирже и чтоб пацаны поняли</p>
-                </li>
-                <li class="swiper-slide">
-                    <img src="../assets/img/slide.png" alt="slide-description" width="268px" height="268px">
-                    <p class="slide-text">Как начать за рабатывать на бирже и чтоб пацаны поняли</p>
-                </li>
+            <button class="button button-more">Открыть ещё</button>
+        </section>
+        <!-- Блок консультации -->
+        <section class="consult">
+            <div class="consult-mask">
+                <div class="consult-wrapper">
+                    <h2 class="consult-title">Сомневаетесь? проконсультируйтесь бесплатно прямо сейчас</h2>
+                    <p class="consult-text">Ответим на любые вопросы и дадим качественную оценку вашим перспективам в защите своих прав перед Wildberries</p>
+                    <a href="#form" class="button protect-button">Обратиться за помощью</a>
+                </div>
             </div>
-        </ul>
-    </section>
-    <section class="form" id="form">
-        <form class="form-wrapper">
-            <h2 class="form-title">связаться с нами</h2>
-            <p class="form-text">Оставьте свои контактные данные и мы обязательно свяжемся с вами!</p>
-            <input class="form-input" type="text" name="name" id="name" placeholder="Имя" required>
-            <input class="form-input" type="email" name="email" id="email" placeholder="Почта" required>
-            <input class="form-input" type="number" name="number" id="number" placeholder="Телефон" required>
-            <button class="button">Связаться со мной</button>
-            <p class="form-politic">Нажимая кнопку, Вы соглашаетесь с политикой конфидециальности</p>
-        </form>
-    </section>
-    <section class="contact">
+        </section>
+        <!-- Блок слайдера -->
+        <section class="experience">
+            <h2 class="experience-title">делимся опытом</h2>
+            <a href="#" class="happy-button experience-button">Читать блог</a>
+            <ul class="swiper">
+                <div class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="../assets/img/slide.png" alt="slide-description" width="268px" height="268px">
+                        <p class="slide-text">Как начать за рабатывать на бирже и чтоб пацаны поняли</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="../assets/img/slide.png" alt="slide-description" width="268px" height="268px">
+                        <p class="slide-text">Как начать за рабатывать на бирже и чтоб пацаны поняли</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="../assets/img/slide.png" alt="slide-description" width="268px" height="268px">
+                        <p class="slide-text">Как начать за рабатывать на бирже и чтоб пацаны поняли</p>
+                    </li>
+                </div>
+            </ul>
+        </section>
+        <!-- Блок формы -->
+        <section class="form" id="form">
+            <form class="form-wrapper">
+                <h2 class="form-title">связаться с нами</h2>
+                <p class="form-text">Оставьте свои контактные данные и мы обязательно свяжемся с вами!</p>
+                <input class="form-input" type="text" name="name" id="name" placeholder="Имя" required>
+                <input class="form-input" type="email" name="email" id="email" placeholder="Почта" required>
+                <input class="form-input" type="number" name="number" id="number" placeholder="Телефон" required>
+                <button class="button">Связаться со мной</button>
+                <p class="form-politic">Нажимая кнопку, Вы соглашаетесь с политикой конфидециальности</p>
+            </form>
+        </section>
+    </main>
+    <!-- Блок контактов -->
+    <footer class="contact">
         <div class="contact-wrapper">
             <h2 class="contact-title">или свяжитесь с нами самостоятельно</h2>
             <a class="contact-link contact-number" href="tel:+78005553535">+7-800-555-35-35</a>
@@ -278,15 +304,24 @@
                 <iframe class="contact-frame" src="https://yandex.ru/map-widget/v1/-/CCUBQVWQ-A" width="345" height="351" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <article class="modal" id="modal-form">
+        <h2 class="modal-title">Успешно!</h2>
+        <p class="modal-text">В ближайшее время мы с вами свяжемся!</p>
+    </article>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/modules/lib/jquery.spincrement.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="assets/modules/main_nav.js"></script>
     <script src="assets/modules/video.js"></script>
     <script src="assets/modules/swiper.js"></script>
     <script src="assets/modules/center_animation.js"></script>
     <script src="assets/modules/lib/readmore.js"></script>
     <script src="assets/modules/readmore_control.js"></script>
+    <script src="assets/modules/spincrement.js"></script>
 </body>
 
 </html>

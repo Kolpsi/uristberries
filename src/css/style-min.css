@@ -348,6 +348,12 @@ body input[type="radio"].visually-hidden {
 .button-main-nav {
   padding: 1rem 0 1rem 0;
   min-height: 0;
+  margin-bottom: 12.5rem;
+}
+.button-statistic {
+  padding: 1rem 7.375rem;
+  min-height: 0;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .main-nav--nojs .main-nav__toggle {
@@ -402,7 +408,9 @@ body input[type="radio"].visually-hidden {
 }
 .main-nav {
   background: #000;
-  padding-bottom: 5rem;
+}
+.main-wrapper {
+  background: #000;
 }
 .logo {
   padding-bottom: 9.5rem;
@@ -812,15 +820,16 @@ body input[type="radio"].visually-hidden {
   font-weight: 600;
   line-height: 1.5rem;
   letter-spacing: 0.015em;
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   padding-bottom: 2.75rem;
+  text-decoration: none;
 }
 .happy-button::after {
   content: '';
   position: absolute;
   top: 7px;
-  right: -15px;
+  right: 75px;
   width: 8px;
   height: 8px;
   border-top: 2px solid #fff;
@@ -854,6 +863,9 @@ body input[type="radio"].visually-hidden {
 .happy-item-wrapper {
   margin: 0 auto;
   width: 18.438rem;
+}
+.happy-item-hidden {
+  display: none;
 }
 .item-name {
   margin: 2.5rem;
@@ -896,6 +908,9 @@ body input[type="radio"].visually-hidden {
   letter-spacing: 0.015em;
   text-align: left;
   margin: 0 0 1.25rem 0;
+}
+#hidden-feedback {
+  display: none;
 }
 .consult {
   color: #fff;
