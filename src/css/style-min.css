@@ -355,8 +355,29 @@ body input[type="radio"].visually-hidden {
   min-height: 0;
   width: 100%;
 }
-@media (max-width: 767px) {
-  .main-nav--nojs .main-nav__toggle {
+.button-modal {
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0.015em;
+  border: 2px solid #FFFFFF;
+  border-radius: 36px;
+  background: #000;
+  margin: 0 auto;
+}
+@media (min-width: 1100px) {
+  .button-main-nav {
+    margin: 0.844rem 0 0.844rem 0;
+    width: 10.625rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.313rem;
+    letter-spacing: 0.015em;
+    background: #7A1FC1;
+    border-radius: 2.25rem;
+  }
+}
+@media (max-width: 1100px) {
+  .main-nav--nojs .main-nav-toggle {
     display: none;
   }
   .main-nav--closed .site-list,
@@ -369,7 +390,7 @@ body input[type="radio"].visually-hidden {
   .main-nav--nojs .site-list {
     display: block;
   }
-  .main-nav__toggle {
+  .main-nav-toggle {
     position: absolute;
     top: -5px;
     right: 10px;
@@ -381,7 +402,7 @@ body input[type="radio"].visually-hidden {
     border: none;
     cursor: pointer;
   }
-  .main-nav--closed .main-nav__toggle::before {
+  .main-nav--closed .main-nav-toggle::before {
     content: '';
     position: absolute;
     top: 20px;
@@ -391,12 +412,12 @@ body input[type="radio"].visually-hidden {
     background-color: #fff;
     box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
   }
-  .main-nav--opened .main-nav__toggle {
+  .main-nav--opened .main-nav-toggle {
     top: -5px;
     right: 10px;
     background-color: #000;
   }
-  .main-nav--opened .main-nav__toggle::after {
+  .main-nav--opened .main-nav-toggle::after {
     content: '';
     position: absolute;
     top: 16px;
@@ -411,6 +432,21 @@ body input[type="radio"].visually-hidden {
 }
 .main-wrapper {
   background: #000;
+}
+@media (min-width: 1100px) {
+  .main-nav {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .main-nav-toggle {
+    display: none;
+  }
+  .main-header {
+    max-width: 72.5rem;
+    margin: 0 auto;
+  }
 }
 .logo {
   padding-bottom: 9.5rem;
@@ -427,25 +463,49 @@ body input[type="radio"].visually-hidden {
   padding: 0;
   padding-bottom: 0.6rem;
 }
+@media (min-width: 1100px) {
+  .logo {
+    width: 9.563rem;
+  }
+}
 .site-list {
   font-family: 'Alumni Sans', sans-serif;
   text-align: center;
   font-size: 2.5rem;
   margin: 0;
 }
-.site-list__item {
+.site-list-item {
   list-style: none;
   padding-bottom: 1.75rem;
 }
-.site-list__item:last-child {
+.site-list-item:last-child {
   padding-bottom: 5rem;
 }
-.site-list__link {
+.site-list-link {
   display: block;
   text-decoration: none;
   color: #fff;
   width: 100%;
   text-transform: uppercase;
+}
+@media (min-width: 1100px) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 437px;
+  }
+  .site-list-item:first-child {
+    display: none;
+  }
+  .site-list-link {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0.015em;
+    text-align: left;
+  }
 }
 .protect {
   background: #000;
@@ -1119,6 +1179,71 @@ body input[type="radio"].visually-hidden {
 }
 .contact-frame {
   border: none;
+}
+.modal {
+  text-align: center;
+  overflow-x: auto;
+  display: none;
+  color: #fff;
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.modal-title {
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.375rem;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2.5rem;
+}
+.modal-text {
+  line-height: 1.5rem;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+.modal-wrapper {
+  width: 14.25rem;
+  margin: 0 auto;
+  padding-bottom: 11.25rem;
+}
+.modal-logo {
+  text-align: left;
+}
+.modal-close-btn {
+  border: none;
+  background: #000;
+  position: absolute;
+  right: 20px;
+  top: -2px;
+  width: 32px;
+  height: 32px;
+}
+.modal-close-btn::before,
+.modal-close-btn::after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #fff;
+}
+.modal-close-btn::before {
+  transform: rotate(45deg);
+}
+.modal-close-btn::after {
+  transform: rotate(-45deg);
+}
+.modal-show {
+  display: block;
 }
 
 /*# sourceMappingURL=style-min.css.map */

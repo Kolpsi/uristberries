@@ -1,6 +1,6 @@
 // навигация главной страницы
 @media (max-width: @mobile-width-only) {
-    .main-nav--nojs .main-nav__toggle {
+    .main-nav--nojs .main-nav-toggle {
         display: none;
       }
 
@@ -17,7 +17,7 @@
         display: block;
       }
 
-      .main-nav__toggle {
+      .main-nav-toggle {
         position: absolute;
         top: -5px;
         right: 10px;
@@ -33,7 +33,7 @@
       }
 
 
-      .main-nav--closed .main-nav__toggle::before {
+      .main-nav--closed .main-nav-toggle::before {
         content: '';
         position: absolute;
         top: 20px;
@@ -46,7 +46,7 @@
         box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
       }
 
-      .main-nav--opened .main-nav__toggle {
+      .main-nav--opened .main-nav-toggle {
         top: -5px;
         right: 10px;
 
@@ -72,4 +72,20 @@
 
 .main-wrapper {
     background: #000;
+}
+
+@media (min-width: @desktop-width) {
+    .main-nav {
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        &-toggle {
+            display: none;
+        }
+    }
+    .main-header {
+        max-width: 72.5rem;
+        margin: 0 auto;
+    }
 }

@@ -1,0 +1,73 @@
+.modal {
+    text-align: center;
+    overflow-x: auto;
+    display: none;
+    color: #fff;
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    &-title {
+        font-family: 'Alumni Sans', sans-serif;
+        font-size: 3.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.375rem;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 2.5rem;
+    }
+
+    &-text {
+        line-height: 1.5rem;
+        letter-spacing: 0.015em;
+        text-align: center;
+    }
+
+    &-wrapper {
+        width: 14.25rem;
+        margin: 0 auto;
+        padding-bottom: 11.25rem;
+    }
+
+    &-logo {
+        text-align: left;
+    }
+
+    &-close-btn {
+        border: none;
+        background: #000;
+        position: absolute;
+        right: 20px;
+        top: -2px;
+        width: 32px;
+        height: 32px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 33px;
+            width: 2px;
+            background-color: #fff;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.modal-show {
+    display: block;
+}
