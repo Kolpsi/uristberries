@@ -712,10 +712,23 @@ body input[type="radio"].visually-hidden {
     margin-right: 90px;
     width: 31.25rem;
   }
+  .parallax-black {
+    position: absolute;
+    width: 100%;
+    min-height: 800px;
+  }
+  .parallax-black-1 {
+    background: url('../assets/img/bg-right.png') right no-repeat;
+  }
+  .parallax-black-2 {
+    background: url('../assets/img/bg-left.png') left no-repeat;
+  }
+  .parallax-black-3 {
+    background: url('../assets/img/bg-left.png') left no-repeat;
+  }
 }
 .statistic {
   color: #fff;
-  background: #000;
   text-align: center;
   padding-bottom: 5rem;
 }

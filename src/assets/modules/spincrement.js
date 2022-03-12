@@ -1,3 +1,4 @@
+// Анимация счетчика
 $(function() {
     var Animation = function() {
         var hFrom = $(window).scrollTop();

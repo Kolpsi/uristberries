@@ -25,9 +25,7 @@
         document.addEventListener('scroll', getCoord)
     } else {
         function getCoord(elem) {
-            let centerElem = document.elementFromPoint(970, 300)
-            console.log(centerElem)
-            console.log(adviseItem1.getBoundingClientRect())
+            let centerElem = document.elementFromPoint(1170, 300)
             if (centerElem.classList.contains('advice-item-1')) {
                 adviseItem1.classList.add('active');
                 adviseItem2.classList.remove('active');
