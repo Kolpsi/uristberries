@@ -1,23 +1,31 @@
 .parallax {
-    position: absolute;       
-    width: 37.5rem;
-    min-height: 800px;
+    display: none;
+}
 
-    &-1 {
-        background: url('../assets/img/bg_right.png') right no-repeat;
-        right: 0;
-    }
+@media (min-width: @desktop-width) {
+    .parallax {
+        display: block;
+        position: absolute;
+        width: 37.5rem;
+        min-height: 800px;
 
-    &-2 {
-        background: url('../assets/img/bg_left.png') left no-repeat;
-    }
+        &-1 {
+            background: url('../assets/img/bg_right.png') right no-repeat;
+            right: 0;
+        }
 
-    &-3 {
-        background: url('../assets/img/bg_left.png') left no-repeat;
-        width: 37.5rem;    
-    }
+        &-2 {
+            background: url('../assets/img/bg_left.png') left no-repeat;
+        }
 
-    &-4 {
-        background: url('../assets/img/parallax_pink_right.png') right no-repeat;
+        &-3 {
+            background: url('../assets/img/bg_left.png') left no-repeat;
+            width: 37.5rem;
+        }
+
+        &-4 {
+            background: url('../assets/img/parallax_pink_right.png') right no-repeat;
+        }
+
     }
 }

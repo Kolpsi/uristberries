@@ -1400,23 +1400,29 @@ body input[type="radio"].visually-hidden {
   display: block;
 }
 .parallax {
-  position: absolute;
-  width: 37.5rem;
-  min-height: 800px;
+  display: none;
 }
-.parallax-1 {
-  background: url('../assets/img/bg_right.png') right no-repeat;
-  right: 0;
-}
-.parallax-2 {
-  background: url('../assets/img/bg_left.png') left no-repeat;
-}
-.parallax-3 {
-  background: url('../assets/img/bg_left.png') left no-repeat;
-  width: 37.5rem;
-}
-.parallax-4 {
-  background: url('../assets/img/parallax_pink_right.png') right no-repeat;
+@media (min-width: 1160px) {
+  .parallax {
+    display: block;
+    position: absolute;
+    width: 37.5rem;
+    min-height: 800px;
+  }
+  .parallax-1 {
+    background: url('../assets/img/bg_right.png') right no-repeat;
+    right: 0;
+  }
+  .parallax-2 {
+    background: url('../assets/img/bg_left.png') left no-repeat;
+  }
+  .parallax-3 {
+    background: url('../assets/img/bg_left.png') left no-repeat;
+    width: 37.5rem;
+  }
+  .parallax-4 {
+    background: url('../assets/img/parallax_pink_right.png') right no-repeat;
+  }
 }
 
 /*# sourceMappingURL=style-min.css.map */
