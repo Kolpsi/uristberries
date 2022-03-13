@@ -86,7 +86,7 @@
         line-height: 200px;
         font-size: 22px;
         color: #fff;
-        animation: animate 20s ease-in infinite;
+        animation: animate 20s linear infinite;
 
         &-span {
             font-weight: 1rem;
@@ -94,7 +94,7 @@
             display: inline-block;
             width: 25px;
             position: absolute;
-            transform: translate(-12.5px, 0px)rotate(var(--rot)) translate(0, -105px)
+            transform: translate(-12.5px, 0px)rotate(var(--rot)) translate(0, -120px)
         }
 
         &-wrapper {
@@ -109,5 +109,8 @@
                 background: url('../assets/img/arrow_down.svg') center no-repeat;
             }
         }
+    }
+    .protect-circle .circle-span {
+        transform: translate(-12.5px, 0px)rotate(var(--rot)) translate(0, -105px)
     }
 }

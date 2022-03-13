@@ -65,3 +65,52 @@
         display: block;
     }
 }
+
+@media (min-width: @desktop-width) {
+    .team {
+        &-wrapper {
+            width: 72.5rem;
+        }
+
+        &-title {
+            font-size: 6rem;
+            line-height: 5.375rem;
+            margin-bottom: 1.25rem;
+        }
+
+        &-description {
+            width: 33rem;
+            margin-bottom: 8.75rem;
+        }
+    }
+
+    .team-cards {
+        display: flex;
+        
+        justify-content: space-between;
+        
+        &-item {
+            width: 17rem;
+            position: relative;
+        }
+    }
+
+    .circle {
+        &-nabotov,
+        &-astahov,
+        &-kapustina {
+            animation: animate 20s linear infinite;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 10px;
+                right: -15px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 100px;
+                font-size: 10px;
+                z-index: -1;
+                opacity: 0.4;
+        }
+    }
+}
