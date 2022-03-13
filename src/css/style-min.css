@@ -567,9 +567,6 @@ body input[type="radio"].visually-hidden {
   padding-left: 1em;
   padding-bottom: 2.5em;
 }
-.protect-circle {
-  display: none;
-}
 @media (min-width: 1160px) {
   .protect-wrapper {
     position: relative;
@@ -628,9 +625,6 @@ body input[type="radio"].visually-hidden {
     bottom: -80px;
     right: 20px;
     background: url('../assets/img/arrow_down.svg') center no-repeat;
-  }
-  .protect-circle .circle-span {
-    transform: translate(-12.5px, 0px) rotate(var(--rot)) translate(0, -105px);
   }
 }
 .advice {
@@ -881,21 +875,22 @@ body input[type="radio"].visually-hidden {
     width: 17rem;
     position: relative;
   }
-  .circle-nabotov,
-  .circle-astahov,
-  .circle-kapustina {
-    animation: animate 20s linear infinite;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 10px;
-    right: -15px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    font-size: 10px;
-    z-index: -1;
-    opacity: 0.4;
+  .team-cards-item:hover .circle-nabotov,
+  .team-cards-item:hover .circle-astahov,
+  .team-cards-item:hover .circle-kapustina {
+    animation: coming 1s ease-in, animate 15s linear infinite;
+    top: 30px;
+    right: 5px;
+  }
+  @keyframes coming {
+    0% {
+      top: 10px;
+      right: -15px;
+    }
+    100% {
+      top: 30px;
+      right: 5px;
+    }
   }
 }
 .about {
@@ -1462,7 +1457,40 @@ body input[type="radio"].visually-hidden {
     width: 37.5rem;
   }
   .parallax-4 {
-    background: url('../assets/img/parallax_pink_right.png') right no-repeat;
+    background: url('../assets/img/bg_pink_left.png') left no-repeat;
+  }
+}
+.circle {
+  display: none;
+}
+.circle-nabotov,
+.circle-astahov,
+.circle-kapustina {
+  display: none;
+}
+@media (min-width: 1160px) {
+  .circle {
+    display: block;
+  }
+  .circle-nabotov,
+  .circle-astahov,
+  .circle-kapustina {
+    display: block;
+    animation: animate 20s linear infinite;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    right: -15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 10px;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  .protect-circle .circle-span {
+    transform: translate(-12.5px, 0px) rotate(var(--rot)) translate(0, -105px);
   }
 }
 

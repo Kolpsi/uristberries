@@ -7,4 +7,7 @@ $(".parallax-2").parallax({
 $(".parallax-3").parallax({
     y: "20%",
 });
+$(".parallax-4").parallax({
+    y: "30%",
+});
 
