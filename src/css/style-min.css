@@ -1301,19 +1301,40 @@ body input[type="radio"].visually-hidden {
     margin-bottom: 5rem;
   }
   .happy-list {
+    position: relative;
     width: 72.5rem;
     margin: 0 auto;
   }
+  .happy-list::after {
+    content: '';
+    position: absolute;
+    top: 47%;
+    right: 8%;
+    width: 60px;
+    height: 60px;
+    background: url(../assets/img/arrow_right.svg) center no-repeat;
+  }
+  .happy-list::before {
+    content: '';
+    position: absolute;
+    top: 47%;
+    left: -8%;
+    width: 60px;
+    height: 60px;
+    background: url(../assets/img/arrow_left.svg) center no-repeat;
+  }
   .happy-item {
     display: inline;
-    margin: 0;
     background: #fff;
   }
   .happy-item-bg {
     display: inline-block;
     background: #230F33;
     width: 41.25rem;
-    margin: 0;
+    margin: 0 0 0.625rem 0;
+  }
+  .happy-item-hidden {
+    display: none;
   }
   .happy-item-wrapper {
     width: 34.25rem;
@@ -1386,6 +1407,33 @@ body input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding-bottom: 2.5rem;
 }
+@media (min-width: 1160px) {
+  .consult-title {
+    font-size: 6rem;
+    line-height: 5.375rem;
+    padding: 3.75rem 0 2.5rem 0;
+  }
+  .consult-mask {
+    max-width: 72.5rem;
+    background: url(../assets/img/consult_mask_desktop.png) center no-repeat, linear-gradient(#7A1FC1 0%, #E625B0 48%);
+  }
+  .consult-wrapper {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding-bottom: 3.875rem;
+  }
+  .consult-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    padding-bottom: 5.625rem;
+    width: 47.5rem;
+    margin: 0 auto;
+  }
+  .consult .button-protect {
+    margin: 0 auto;
+  }
+}
 .swiper {
   max-width: 22.813rem;
   margin: 0 auto;
@@ -1438,6 +1486,29 @@ body input[type="radio"].visually-hidden {
   letter-spacing: 0.015em;
   text-align: left;
   margin-top: 0.75rem;
+}
+@media (min-width: 1160px) {
+  .experience-title {
+    width: 41.25rem;
+    font-size: 6rem;
+    line-height: 5.375rem;
+    margin: 0;
+  }
+  .experience-button-all {
+    border: 2px solid #E625B0;
+    color: #E625B0;
+    border-radius: 36px;
+    text-decoration: none;
+    margin-left: 291px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    align-self: center;
+  }
+  .experience-wrapper {
+    display: flex;
+    align-items: baseline;
+    width: 72.5rem;
+    margin: 0 auto;
+  }
 }
 .form {
   color: #fff;
@@ -1651,6 +1722,13 @@ body input[type="radio"].visually-hidden {
   .parallax-5 {
     background: url('../assets/img/bg_pink_right.svg') right no-repeat;
     right: 0;
+  }
+  .parallax-6 {
+    background: url('../assets/img/bg_pink_right.svg') right no-repeat;
+    right: 0;
+  }
+  .parallax-7 {
+    background: url('../assets/img/bg_pink_left.png') left no-repeat;
   }
 }
 .circle {
