@@ -1623,6 +1623,7 @@ body input[type="radio"].visually-hidden {
     background: #fff;
     border: 1px solid #000;
     margin-right: 10px;
+    margin-bottom: 2rem;
   }
   .form-politic {
     color: #000000;
