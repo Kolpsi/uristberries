@@ -16,6 +16,7 @@
         }
     });
 
+
     // Открытие карточек с отзывами
     var activeStep = 1;
     $(".button-more").click(function() {
@@ -27,6 +28,7 @@
     $('.circle-wrapper').on('click', function() {
         $('html,body').animate({ scrollTop: $('.advice').offset().top + "px" }, { duration: 1E3 });
     });
-
-
+    if (document.documentElement.clientWidth > 1160) {
+        buttonConsult.innerHTML = 'Проконсультироваться'
+    }
 })();
