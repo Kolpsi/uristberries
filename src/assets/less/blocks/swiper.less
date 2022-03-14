@@ -1,10 +1,10 @@
 .swiper {
     max-width: 22.813rem;
     margin: 0 auto;
+
     &-slide {
         width: 16.75rem;
         border-radius: 24px;
-
     }
 }
 
@@ -13,6 +13,24 @@
 }
 
 @media (min-width: @desktop-width) {
+    .swiper {
+        max-width: 72.5rem;
 
+        &-slide {
+            width: 22.5rem;
+            border-radius: 1.5rem;
+        }
+
+        &-image {
+            width: 22.5rem;
+            height: 22.5rem;
+        }
+    }
+
+    .slide-text {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        width: 22.5rem;
+    }
 
 }

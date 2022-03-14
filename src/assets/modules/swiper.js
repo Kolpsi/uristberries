@@ -6,6 +6,11 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 1,
             spaceBetween: -70,
             centeredSlides: true,
+        },
+        1160: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            centeredSlides: false,
         }
     }
 });
