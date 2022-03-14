@@ -10,4 +10,6 @@ $(".parallax-3").parallax({
 $(".parallax-4").parallax({
     y: "30%",
 });
-
+$(".parallax-5").parallax({
+    y: "30%",
+});

@@ -1,5 +1,6 @@
 .happy {
     margin-bottom: 5rem;
+
     &-button {
         position: relative;
         color: #fff;
@@ -53,9 +54,12 @@
         border-radius: 24px;
         color: #fff;
 
-        &-wrapper {
-            margin: 0 auto;
-            width: 18.438rem;
+        &-bg {
+        margin: 0 auto 2.5rem;
+        background: #230F33;
+        width: 18.438rem;
+        border-radius: 24px;
+        color: #fff;
         }
 
         &-hidden {
@@ -65,8 +69,14 @@
 }
 
 .item {
+
+    &-image {
+        display: none;
+    }
+
+
     &-name {
-        margin: 2.5rem ;
+        margin: 2.5rem;
         font-size: 1.25rem;
         font-weight: 700;
         line-height: 1.875rem;
@@ -103,6 +113,10 @@
         text-align: left;
         color: #E525B0;
         text-transform: uppercase;
+
+        &-span {
+            margin-right: 11.25rem;
+        }
     }
 
     &-result-description {
@@ -115,4 +129,80 @@
 
 #hidden-feedback {
     display: none;
+}
+
+@media (min-width: @desktop-width) {
+    .happy {
+        &-title {
+            font-size: 6rem;
+            line-height: 5.375rem;
+            margin: 0 auto;
+            width: 60rem;
+            margin-bottom: 5rem;
+        }
+
+        &-list {
+            width: 72.5rem;
+            margin: 0 auto;
+        }
+
+        &-item {
+            display: inline;
+            margin: 0;
+            background: #fff;
+            &-bg {
+                display: inline-block;
+                background: #230F33;
+                width: 41.25rem;
+                margin: 0;
+            }
+        }
+
+        &-item-wrapper {
+            width: 34.25rem;
+            margin: 0 auto;
+        }
+
+        &-item-hidden {
+            display: none;
+        }
+
+        &-button {
+            display: none;
+        }
+    }
+
+    .item {
+
+        &-image {
+            display: inline-block;
+            margin-right: 2.5rem;
+            vertical-align: bottom;
+        }
+
+        &-name {
+            padding: 2.5rem 0 0.75rem 0;
+            margin: 0;
+        }
+
+        &-problem {
+            margin-bottom: 2rem;
+        }
+
+        &-result {
+            margin-bottom: 0.75rem;
+        }
+
+        &-result-description {
+            margin-bottom: 1rem;
+        }
+
+        &-total {
+            margin: 0;
+            padding-bottom: 2.5rem;
+            &-span {
+                margin-right: 0;
+            }
+        }
+    }
 }
