@@ -2,6 +2,7 @@
     color: #fff;
     background: #10041A;
     padding-bottom: 5rem;
+
     &-wrapper {
         width: 21.375rem;
         margin: 0 auto;
@@ -63,16 +64,79 @@
     }
 
     &-map {
-        -moz-border-radius: 14px 14px 14px 14px; /* Firefox */
-        -webkit-border-radius: 14px 14px 14px 14px; /* Safari, Chrome */
-        -khtml-border-radius: 14px 14px 14px 14px; /* KHTML */
-        border-radius: 14px 14px 14px 14px; /* CSS3 */
+        -moz-border-radius: 14px 14px 14px 14px;
+        /* Firefox */
+        -webkit-border-radius: 14px 14px 14px 14px;
+        /* Safari, Chrome */
+        -khtml-border-radius: 14px 14px 14px 14px;
+        /* KHTML */
+        border-radius: 14px 14px 14px 14px;
+        /* CSS3 */
         overflow: hidden;
         position: relative;
-        }
+        background: url('../assets/img/map_background_desktop.jpg') center no-repeat;
+    }
 
     &-frame {
         border: none;
     }
 }
 
+@media (min-width: @desktop-width) {
+    .contact {
+        &-wrapper {
+            width: 72.5rem;
+            background: #fff;
+            border-radius: 0 0 2.25rem 2.25rem;
+            padding-bottom: 6.25rem;
+        }
+
+        &-center {
+            position: relative;
+            width: 60rem;
+            margin: 0 auto;
+        }
+
+        &-title {
+            font-size: 4rem;
+            line-height: 3.625rem;
+            color: #000;
+            width: 41.188rem;
+        }
+
+        &-link {
+            color: #7A1FC1;
+        }
+
+        &-number::after {
+            background: url('../assets/img/mobile_icon_pink.svg') center no-repeat;
+        }
+
+        &-email::after {
+            background: url('../assets/img/email_icon_pink.svg') center no-repeat;
+        }
+
+        &-adress {
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+            color: #000;
+            position: absolute;
+            top: 150px;
+            right: 0;
+            width: 560px;
+        }
+
+        &-map {
+            width: 60rem;
+            background: url('../assets/img/map_background_desktop.jpg') center no-repeat;
+        }
+
+        &-frame {
+            width: 60rem;
+        }
+
+        &-email {
+            margin-bottom: 3.75rem;
+        }
+    }
+}

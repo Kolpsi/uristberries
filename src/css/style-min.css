@@ -391,7 +391,6 @@ body input[type="radio"].visually-hidden {
     width: 10.625rem;
     font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1.313rem;
     letter-spacing: 0.015em;
     background: #7A1FC1;
     border-radius: 2.25rem;
@@ -510,6 +509,11 @@ body input[type="radio"].visually-hidden {
   display: inline-block;
   height: 100%;
 }
+.logo-wrapper {
+  position: relative;
+  width: 23.438rem;
+  margin: 0 auto;
+}
 .main-nav--closed .logo {
   padding: 0;
   padding-bottom: 0.6rem;
@@ -517,6 +521,10 @@ body input[type="radio"].visually-hidden {
 @media (min-width: 1160px) {
   .logo {
     width: 9.563rem;
+  }
+  .logo-wrapper {
+    width: 0;
+    margin: 0;
   }
 }
 .site-list {
@@ -1008,7 +1016,7 @@ body input[type="radio"].visually-hidden {
   position: absolute;
   left: 0%;
   right: 0%;
-  top: -36%;
+  top: -10%;
   bottom: 0%;
   margin: auto;
   background-size: contain;
@@ -1591,7 +1599,7 @@ body input[type="radio"].visually-hidden {
     width: 72.5rem;
     background: #fff;
     margin: 0 auto;
-    border-radius: 2.25rem;
+    border-radius: 2.25rem 2.25rem 0 0;
   }
   .form-title {
     font-size: 6rem;
@@ -1693,9 +1701,57 @@ body input[type="radio"].visually-hidden {
   /* CSS3 */
   overflow: hidden;
   position: relative;
+  background: url('../assets/img/map_background_desktop.jpg') center no-repeat;
 }
 .contact-frame {
   border: none;
+}
+@media (min-width: 1160px) {
+  .contact-wrapper {
+    width: 72.5rem;
+    background: #fff;
+    border-radius: 0 0 2.25rem 2.25rem;
+    padding-bottom: 6.25rem;
+  }
+  .contact-center {
+    position: relative;
+    width: 60rem;
+    margin: 0 auto;
+  }
+  .contact-title {
+    font-size: 4rem;
+    line-height: 3.625rem;
+    color: #000;
+    width: 41.188rem;
+  }
+  .contact-link {
+    color: #7A1FC1;
+  }
+  .contact-number::after {
+    background: url('../assets/img/mobile_icon_pink.svg') center no-repeat;
+  }
+  .contact-email::after {
+    background: url('../assets/img/email_icon_pink.svg') center no-repeat;
+  }
+  .contact-adress {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: #000;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 560px;
+  }
+  .contact-map {
+    width: 60rem;
+    background: url('../assets/img/map_background_desktop.jpg') center no-repeat;
+  }
+  .contact-frame {
+    width: 60rem;
+  }
+  .contact-email {
+    margin-bottom: 3.75rem;
+  }
 }
 .modal {
   text-align: center;
@@ -1796,6 +1852,17 @@ body input[type="radio"].visually-hidden {
   }
   .parallax-7 {
     background: url('../assets/img/bg_pink_left.png') left no-repeat;
+  }
+  .parallax-8 {
+    background: url('../assets/img/bg_left.png') left no-repeat;
+  }
+  .parallax-9 {
+    background: url('../assets/img/bg_right.png') right no-repeat;
+    right: 0;
+  }
+  .parallax-10 {
+    background: url('../assets/img/bg_pink_right.svg') right no-repeat;
+    right: 0;
   }
 }
 .circle {

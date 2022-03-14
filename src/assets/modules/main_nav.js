@@ -1,11 +1,7 @@
 (function() {
     const navMain = document.querySelector('.main-nav');
     const navToggle = document.querySelector('.main-nav-toggle');
-    const videoWrapper = document.querySelector('.video-wrapper');
-    const video = videoWrapper.querySelector('.about-video');
-
-
-
+    const buttonConsult = document.querySelector('.button-consult');
     navMain.classList.remove('main-nav--nojs');
     /**
      * @description Функция переключения навигационного меню
@@ -19,12 +15,6 @@
             navMain.classList.remove('main-nav--opened');
         }
     });
-
-    if (video.src == '') {
-        videoWrapper.classList.add('hidden');
-    } else {
-        videoWrapper.classList.add('show');
-    }
 
     // Открытие карточек с отзывами
     var activeStep = 1;
