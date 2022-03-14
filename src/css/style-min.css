@@ -855,6 +855,9 @@ body input[type="radio"].visually-hidden {
   display: block;
 }
 @media (min-width: 1160px) {
+  .team {
+    margin-bottom: 10rem;
+  }
   .team-wrapper {
     width: 72.5rem;
   }
@@ -942,6 +945,27 @@ body input[type="radio"].visually-hidden {
   margin: 0;
   padding-bottom: 2.25em;
 }
+@media (min-width: 1160px) {
+  .about {
+    width: 72.5rem;
+  }
+  .about-title {
+    margin: 0 auto 5rem;
+    width: 37rem;
+    font-size: 6rem;
+    line-height: 5.375rem;
+  }
+  .about-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-item {
+    width: 22.5rem;
+  }
+  .about-item-wrapper {
+    width: 17.938rem;
+  }
+}
 .about-video {
   width: 21.37rem;
   border-radius: 1.5rem;
@@ -964,6 +988,24 @@ body input[type="radio"].visually-hidden {
   margin: auto;
   background-size: contain;
   background-position: center;
+}
+@media (min-width: 1160px) {
+  .about-video {
+    width: 72.5rem;
+    min-height: 40.75rem;
+  }
+  .playpause {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+  .show {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
 }
 .defend {
   width: 21.4rem;

@@ -1,3 +1,4 @@
+// Блок о нас
 .about {
     width: 21.4rem;
     margin: 0 auto;
@@ -52,4 +53,31 @@
             padding-bottom: 2.25em;
         }
     }
+}
+
+@media (min-width: @desktop-width) {
+    .about {
+        width: 72.5rem;
+
+        &-title {
+            margin: 0 auto 5rem;
+            width: 37rem;
+            font-size: 6rem;
+            line-height: 5.375rem;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item {
+            width: 22.5rem;
+
+            &-wrapper {
+                width: 17.938rem;
+            }
+        }
+}
+
 }

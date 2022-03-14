@@ -1,6 +1,9 @@
 (function() {
     const navMain = document.querySelector('.main-nav');
     const navToggle = document.querySelector('.main-nav-toggle');
+    const videoWrapper = document.querySelector('.video-wrapper');
+    const video = videoWrapper.querySelector('.about-video');
+
 
 
     navMain.classList.remove('main-nav--nojs');
@@ -17,6 +20,12 @@
         }
     });
 
+    if (video.src == '') {
+        videoWrapper.classList.add('hidden');
+    } else {
+        videoWrapper.classList.add('show');
+    }
+
     // Открытие карточек с отзывами
     var activeStep = 1;
     $(".button-more").click(function() {
@@ -28,5 +37,6 @@
     $('.circle-wrapper').on('click', function() {
         $('html,body').animate({ scrollTop: $('.advice').offset().top + "px" }, { duration: 1E3 });
     });
+
 
 })();
