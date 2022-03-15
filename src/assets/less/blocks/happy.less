@@ -133,9 +133,18 @@
 }
 
 @media (min-width: @desktop-width) {
+    .item-image-wrapper:hover::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
+    }
     .happy {
         width: 72.5rem;
         margin: 0 auto 12.5rem;
+
         &-title {
             font-size: 6rem;
             line-height: 5.375rem;
@@ -185,22 +194,31 @@
     .item {
 
         &-image {
-            position: relative;
             display: inline-block;
+            position: relative;
             margin-right: 2.5rem;
             vertical-align: bottom;
             border-radius: 36px;
             width: 260px;
             height: 360px;
-            background: url('../assets/img/thanks.png') center no-repeat;
 
-            &:hover {
-                box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
+            &-wrapper {
+                position: relative;
+                display: inline-block;
+                margin-right: 2.5rem;
+                vertical-align: bottom;
+                border-radius: 36px;
+                width: 260px;
+                height: 360px;
             }
 
-            &:active {
-                box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.4) inset;
-            }
+            // &:hover {
+            //     box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
+            // }
+
+            // &:active {
+            //     box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.4) inset;
+            // }
         }
 
         &-name {
@@ -233,25 +251,27 @@
 
 .swiper-button-prev {
     width: 60px;
+
     &::after {
         content: '';
         width: 60px;
         height: 60px;
         background: url(../assets/img/arrow_left.svg) center no-repeat;
         font-size: 0;
-        font-family:none;
+        font-family: none;
     }
 }
 
 .swiper-button-next {
     width: 60px;
+
     &::after {
         content: '';
         width: 60px;
         height: 60px;
         background: url(../assets/img/arrow_right.svg) center no-repeat;
         font-size: 0;
-        font-family:none;
+        font-family: none;
     }
 }
 

@@ -4,11 +4,13 @@
     const modal = document.querySelector('.modal')
     const modalClose = modal.querySelector('.modal-close-btn')
 
+    // появление модального окна при отправке формы
     form.addEventListener('submit', function(evt) {
         evt.preventDefault();
         modal.classList.add('modal-show');
     })
 
+    // закрытие модального окна
     modal.addEventListener('click', function(evt) {
         let target = evt.target;
         evt.preventDefault();

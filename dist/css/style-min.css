@@ -1455,6 +1455,14 @@ body input[type="radio"].visually-hidden {
   display: none;
 }
 @media (min-width: 1160px) {
+  .item-image-wrapper:hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
+  }
   .happy {
     width: 72.5rem;
     margin: 0 auto 12.5rem;
@@ -1496,6 +1504,16 @@ body input[type="radio"].visually-hidden {
     display: none;
   }
   .item-image {
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+    margin-right: 2.5rem;
+    vertical-align: bottom;
+    border-radius: 36px;
+    width: 260px;
+    height: 360px;
+  }
+  .item-image-wrapper {
     position: relative;
     display: inline-block;
     margin-right: 2.5rem;
@@ -1503,13 +1521,6 @@ body input[type="radio"].visually-hidden {
     border-radius: 36px;
     width: 260px;
     height: 360px;
-    background: url('../assets/img/thanks.png') center no-repeat;
-  }
-  .item-image:hover {
-    box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
-  }
-  .item-image:active {
-    box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.4) inset;
   }
   .item-name {
     padding: 2.5rem 0 0.75rem 0;
