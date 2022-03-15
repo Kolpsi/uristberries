@@ -387,20 +387,22 @@ body input[type="radio"].visually-hidden {
   }
   .swiper-button-prev {
     display: flex;
-    left: 250px;
+    left: 10px;
   }
   .swiper-button-next {
     display: flex;
-    right: 430px;
+    right: 210px;
   }
 }
 .swiper2 {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+  width: 72.5rem;
+  padding: 0 100px;
 }
 .swiper2-wrapper {
-  width: 1140px;
+  width: 72.5rem;
   margin: 0 auto;
 }
 @keyframes animate {
@@ -417,7 +419,7 @@ body input[type="radio"].visually-hidden {
   font-size: 16px;
   color: #fff;
   text-align: center;
-  width: 21.5rem;
+  max-width: 21.5rem;
   min-height: 56px;
   border-radius: 36px;
   padding: 0;
@@ -466,7 +468,13 @@ body input[type="radio"].visually-hidden {
 .button-defend {
   display: none;
 }
+.button-consult {
+  width: 100%;
+}
 @media (min-width: 1160px) {
+  .button {
+    max-width: none;
+  }
   .button-main-nav {
     margin: 0.844rem 0 0.844rem 0;
     width: 10.625rem;
@@ -1158,6 +1166,7 @@ body input[type="radio"].visually-hidden {
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
+    border-radius: 1.5rem;
   }
   .about-video {
     width: 72.5rem;
@@ -1290,10 +1299,12 @@ body input[type="radio"].visually-hidden {
     position: sticky;
     top: 0;
     width: 21rem;
+    margin-right: 3.125rem;
   }
   .defend-list {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
   .defend-item {
     width: 760px;
@@ -1441,6 +1452,10 @@ body input[type="radio"].visually-hidden {
   display: none;
 }
 @media (min-width: 1160px) {
+  .happy {
+    width: 72.5rem;
+    margin: 0 auto;
+  }
   .happy-title {
     font-size: 6rem;
     line-height: 5.375rem;
@@ -1681,7 +1696,11 @@ body input[type="radio"].visually-hidden {
   background: #10041A;
 }
 .form-wrapper {
-  width: 21.375rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.form-center {
+  max-width: 21.375rem;
   margin: 0 auto;
 }
 .form-title {
@@ -1755,6 +1774,7 @@ body input[type="radio"].visually-hidden {
   .form-center {
     width: 62rem;
     margin: 0 auto;
+    max-width: none;
   }
   .form-input {
     width: 308px;

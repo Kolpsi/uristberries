@@ -5,12 +5,14 @@
     font-size: 16px;
     color: #fff;
     text-align: center;
-    width: 21.5rem;
+    max-width: 21.5rem;
     min-height: 56px;
     border-radius: 36px;
     padding: 0;
     margin: 0 auto;
     text-decoration: none;
+
+
 
     &-more {
         display: block;
@@ -59,10 +61,15 @@
     &-defend {
         display: none;
     }
+
+    &-consult {
+        width: 100%;
+    }
 }
 
 @media (min-width: @desktop-width) {
     .button {
+        max-width: none;
         &-main-nav {
             margin: 0.844rem 0 0.844rem 0;
             width: 10.625rem;
