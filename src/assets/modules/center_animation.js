@@ -1,3 +1,4 @@
+// подсвечивание элемента находящегося в центре экрана
 (function() {
     const adviseItem1 = document.querySelector('.advice-item-1');
     const adviseItem2 = document.querySelector('.advice-item-2');

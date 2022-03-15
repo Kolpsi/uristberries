@@ -1,3 +1,6 @@
+// Модуль констроля видео
+
+// объявление кнопки плей
 $('.about-video').parent().click(function() {
     if ($(this).children(".about-video").get(0).paused) {
         $(this).children(".about-video").get(0).play();
@@ -16,6 +19,7 @@ $('.about-video').parent().click(function() {
 const videoWrapper = document.querySelector('.video-wrapper');
 const video = videoWrapper.querySelector('.about-video');
 
+// если нет ссылки видео не отображается
 if (video.src == '') {
     videoWrapper.classList.add('hidden');
 } else {
