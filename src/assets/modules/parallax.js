@@ -20,13 +20,10 @@ $(".parallax-7").parallax({
     y: "-80%",
 });
 $(".parallax-8").parallax({
-    y: "50%",
+    y: "40%",
 });
 $(".parallax-9").parallax({
-    y: "80%",
-});
-$(".parallax-9").parallax({
-    y: "10%",
+    y: "-80%",
 });
 $(".parallax-10").parallax({
     y: "-50%",

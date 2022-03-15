@@ -18,7 +18,7 @@
 
 
     // Открытие карточек с отзывами
-    var activeStep = 1;
+    let activeStep = 1;
     $(".button-more").click(function() {
         $('.happy-item').eq(activeStep++).show();
         if (activeStep == $('.happy-item').length) $(this).hide();
