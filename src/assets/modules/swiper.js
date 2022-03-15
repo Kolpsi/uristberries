@@ -15,16 +15,28 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
-// if (document.documentElement.clientWidth > 1160) {
-//     // const happy = document.querySelector('.happy');
-//     // const happylist = happy.querySelector(".happy-list");
-//     // const swiperContainer = happy.querySelector(".swiper-container");
-//     // const happyItem = happy.querySelectorAll('.happy-item');
-//     // happylist.classList.add('swiper2')
-//     // swiperContainer.classList.add('swiper-wrapper')
-//     const swiper2 = new Swiper('.swiper2', {
-//         loop: true,
-//         slidesPerView: 1,
-//         centeredSlides: true,
-//     });
-// }
+if (document.documentElement.clientWidth > 1160) {
+    const happyList = document.querySelector('.happy-list');
+    const happyItem = document.querySelectorAll('.happy-item');
+
+    happyItem.forEach((item) => {
+        item.classList.add('swiper-slide');
+        item.classList.remove('happy-item-hidden')
+    })
+
+    happyList.classList.add('swiper-wrapper');
+
+    var x = document.getElementsByClassName("slider-produtos-wrap");
+
+
+    const swiper2 = new Swiper('.swiper2', {
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 600,
+        centeredSlides: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}

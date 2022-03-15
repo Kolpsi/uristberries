@@ -25,6 +25,21 @@
 }
 
 @media (min-width: @desktop-width) {
+    .video-wrapper {
+        position: relative;
+    }
+
+    .video-overlay:hover::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
+    }
+
     .about-video {
         width: 72.5rem;
         min-height: 40.75rem;

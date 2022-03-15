@@ -137,6 +137,37 @@
 
         &-email {
             margin-bottom: 3.75rem;
+
+            &:hover {
+                color: #6A1BA8;
+                &::after {
+                    background: url('../assets/img/email_icon_hover.svg') center no-repeat;
+                }
+            }
+
+            &:active {
+                color: #8A24DB;
+                background: url('../assets/img/email_icon_active.svg') center no-repeat;
+                &::after {
+                    background: url('../assets/img/email_icon_active.svg') center no-repeat;
+                }
+            }
+        }
+
+        &-number {
+            &:hover {
+                color: #6A1BA8;
+                &::after {
+                    background: url('../assets/img/mobile_icon_hover.svg') center no-repeat;
+                }
+            }
+
+            &:active {
+                color: #8A24DB;
+                &::after {
+                    background: url('../assets/img/mobile_icon_active.svg') center no-repeat;
+                }
+            }
         }
     }
 }
