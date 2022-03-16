@@ -84,6 +84,10 @@
 
 @media (min-width: @desktop-width) {
     .contact {
+        background: url('../assets/img/bg_right.png') right no-repeat,
+            #10041A;
+        background-attachment: fixed;
+
         &-wrapper {
             width: 72.5rem;
             background: #fff;
@@ -140,6 +144,7 @@
 
             &:hover {
                 color: #6A1BA8;
+
                 &::after {
                     background: url('../assets/img/email_icon_hover.svg') center no-repeat;
                 }
@@ -157,6 +162,7 @@
         &-number {
             &:hover {
                 color: #6A1BA8;
+
                 &::after {
                     background: url('../assets/img/mobile_icon_hover.svg') center no-repeat;
                 }
@@ -164,6 +170,7 @@
 
             &:active {
                 color: #8A24DB;
+
                 &::after {
                     background: url('../assets/img/mobile_icon_active.svg') center no-repeat;
                 }
