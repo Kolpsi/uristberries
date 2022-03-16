@@ -135,11 +135,30 @@
 @media (min-width: @desktop-width) {
     .item-image-wrapper:hover::after {
         content: "";
+        display: block;
+        width: 260px;
+        height: 100%;
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background-image: linear-gradient(0deg, #7A1FC1, #7A1FC1);
+        border-radius: 36px;
+        opacity: 0.2;
+    }
+
+    .item-image-wrapper:active::after {
+        content: "";
+        display: block;
+        width: 260px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background-image: linear-gradient(0deg, #7A1FC1, #7A1FC1);
+        border-radius: 36px;
+        opacity: 0.4;
     }
     .happy {
         width: 72.5rem;
@@ -203,7 +222,6 @@
             height: 360px;
 
             &-wrapper {
-                position: relative;
                 display: inline-block;
                 margin-right: 2.5rem;
                 vertical-align: bottom;
@@ -211,14 +229,6 @@
                 width: 260px;
                 height: 360px;
             }
-
-            // &:hover {
-            //     box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.2) inset;
-            // }
-
-            // &:active {
-            //     box-shadow: 0 0 0 10000px rgba(122, 31, 193, 0.4) inset;
-            // }
         }
 
         &-name {
