@@ -58,6 +58,7 @@
             width: 2px;
             background-color: #fff;
         }
+
         &::before {
             transform: rotate(45deg);
         }
@@ -70,4 +71,71 @@
 
 .modal-show {
     display: block;
+}
+
+@media (min-width: @desktop-width) {
+    .modal {
+        overflow: none;
+        color: #000;
+        background: rgba(0, 0, 0, 0.4);
+
+        &-wrapper {
+            padding-bottom: 2rem;
+        }
+
+        &-title {
+            margin: 0;
+            margin-top: 80px;
+            padding-bottom: 20px;
+        }
+
+        &-text {
+            margin: 0;
+        }
+
+        &-desktop-wrapper {
+            width: 35rem;
+            height: 24.125rem;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            padding: 20px;
+            margin-left: -200px;
+            background: #fff;
+            border-radius: 4px;
+            z-index: 99999;
+            opacity: 1;
+            border-radius: 36px;
+        }
+
+        &-close-btn {
+            border: none;
+            background: #fff;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            width: 32px;
+            height: 32px;
+
+            &::before,
+            &::after {
+                position: absolute;
+                left: 15px;
+                content: ' ';
+                height: 33px;
+                width: 2px;
+                background-color: #000;
+            }
+        }
+    }
+
+    .modal .logo {
+        display: none;
+    }
+
+    .modal .logo-wrapper {
+        position: static;
+        width: 560px;
+        margin: 0 auto;
+    }
 }

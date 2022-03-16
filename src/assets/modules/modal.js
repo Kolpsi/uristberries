@@ -1,8 +1,6 @@
 (function() {
     const form = document.querySelector('.form')
-    const formButton = form.querySelector('.button-form')
     const modal = document.querySelector('.modal')
-    const modalClose = modal.querySelector('.modal-close-btn')
 
     // появление модального окна при отправке формы
     form.addEventListener('submit', function(evt) {
