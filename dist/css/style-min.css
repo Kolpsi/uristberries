@@ -651,7 +651,6 @@ body input[type="radio"].visually-hidden {
     width: 9.563rem;
   }
   .logo-wrapper {
-    width: 0;
     margin: 0;
   }
 }
