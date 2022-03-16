@@ -2,22 +2,22 @@
 @media (max-width: @mobile-width-only) {
     .main-nav--nojs .main-nav-toggle {
         display: none;
-      }
+    }
 
-      .main-nav--closed .site-list,
-      .button-main-nav {
+    .main-nav--closed .site-list,
+    .button-main-nav {
         display: none;
-      }
+    }
 
-      .main-nav--opened .button-main-nav {
-          display: block;
-      }
-
-      .main-nav--nojs .site-list {
+    .main-nav--opened .button-main-nav {
         display: block;
-      }
+    }
 
-      .main-nav-toggle {
+    .main-nav--nojs .site-list {
+        display: block;
+    }
+
+    .main-nav-toggle {
         position: absolute;
         top: -5px;
         right: 10px;
@@ -30,10 +30,10 @@
         background-color: #000;
         border: none;
         cursor: pointer;
-      }
+    }
 
 
-      .main-nav--closed .main-nav-toggle::before {
+    .main-nav--closed .main-nav-toggle::before {
         content: '';
         position: absolute;
         top: 20px;
@@ -44,26 +44,26 @@
 
         background-color: #fff;
         box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
-      }
+    }
 
-      .main-nav--opened .main-nav-toggle {
+    .main-nav--opened .main-nav-toggle {
         top: -5px;
         right: 10px;
 
         background-color: #000;
 
         &::after {
-          content: '';
-          position: absolute;
-          top: 16px;
-          right: 16px;
+            content: '';
+            position: absolute;
+            top: 16px;
+            right: 16px;
 
-          width: 24px;
-          height: 24px;
+            width: 24px;
+            height: 24px;
 
-          background: url('../assets/img/menu_close.svg') center no-repeat;
+            background: url('../assets/img/menu_close.svg') center no-repeat;
         }
-      }
+    }
 }
 
 .main-nav {
@@ -80,10 +80,12 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+
         &-toggle {
             display: none;
         }
     }
+
     .main-header {
         max-width: 72.5rem;
         margin: 0 auto;
